@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCCRM Retreat Registration Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Church Logo Area -->
+    <div class="logo-container">
+        <!-- Replace the image source with your church logo -->
+        <img src="watchman logo.jpg" alt="WCCRM Logo" class="logo">
+    </div>
+
+    <h2>Watchman Catholic Charismatic Renewal Movement (Markudi Diocese)</h2>
+    <h3>December Retreat Registration 2025</h3>
+
+    <form id="registrationForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" required>
+
+        <label>Email Address</label>
+        <input type="email" id="email" required>
+
+        <label>District (Location)</label>
+        <select id="district" required>
+            <option value="">-- Select District --</option>
+            <option>Otukpo District</option>
+            <option>Markudi District</option>
+            <option>Zakibiam District</option>
+            <option>Gboko District</option>
+            <option>Ugbemma District</option>
+            <option>Idekpa District</option>
+            <option>Ugbokolo District</option>
+            <option>Ayilamo District</option>
+        </select>
+
+        <label>Worker?</label>
+        <select id="worker" required>
+            <option value="">-- Select Option --</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Function</label>
+        <select id="function" required>
+            <option value="">-- Select Function --</option>
+            <option>Choir</option>
+            <option>Ushering</option>
+            <option>Technical/Media</option>
+            <option>Prayer Warrior</option>
+            <option>Sanctuary Keeper</option>
+            <option>Evangelism</option>
+            <option>Children Ministry</option>
+            <option>Pastor</option>
+            <option>None</option>
+        </select>
+
+        <button type="submit">Submit Registration</button>
+    </form>
+
+    <p id="successMessage" class="success"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
